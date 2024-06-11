@@ -1,0 +1,236 @@
+:root{
+    --text: white;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.main{
+    background-image: url(assets/img/bg.jpg);
+    height: 700px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2000px,100vw);
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    height: 700px;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    /* background: linear-gradient(black,rgb(75, 75, 75), black); */
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    /* background-color:red ; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* border:2px solid white; */
+
+    padding: 1.5vw 12vw;
+    /* background:linear-gradient(black,transparent,black); */
+    
+}
+
+nav img{
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+
+}
+
+.hero{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    color: var(--text);
+    font-family: Georgia, Times, 'Times New Roman', serif ;
+    gap:25px ;
+    margin-bottom: 2vw;
+}
+
+.hero span:first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hero span:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero span:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+#email{
+    background-color: black;
+    opacity: 0.6;
+    padding: 10px 15px;
+    width: 22vw;
+    height: 33px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 300;
+    border: .8px solid white;
+    color: white;
+}
+
+#form button{
+    padding: 1vw 1.3vw;
+    font-size: 20px;
+    background-color: red;
+    color: var(--text);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#form button:hover{
+    background-color: rgb(209, 0, 0);
+}
+
+#email::placeholder{
+    color: white;
+}
+
+nav div button:first-child{
+    background-color: rgba(0, 0, 0,0.7);
+    color: var(--text);
+    padding: .4vw .8vw;
+    font-size: 15px;
+    border: .2px solid rgb(143, 142, 142);
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+nav div button:nth-child(2):hover{
+    background-color: rgb(207, 0, 0);
+}
+
+nav div button:nth-child(2){
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding: .4vw .8vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.first{
+    border-bottom: 8px solid rgb(56, 56, 56);
+}
+
+.second,.third{
+    height: 600px;
+    background-color: black;
+    border-bottom: 8px solid rgb(56, 56, 56)
+}
+
+.content{
+    height:600px;
+    position: relative;
+    z-index: 10;
+    color:var(--text);
+}
+
+.content{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 180px;
+}
+
+.large{
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content>span>img{
+    height: 400px;
+}
+
+.small{
+    font-size:25px;
+}
+
+.content>span:nth-child(2){
+    position: relative;
+}
+
+.content>span>video{
+    position: absolute;
+    width: 386px;
+    right: 76px;
+    bottom: 105px;
+    height: 214px;
+    z-index: -1;
+}
+
+.mobile{
+    position: relative;
+    /* border: 2px solid yellow; */
+
+}
+
+.bg-black{
+    background-color: black;
+    border-radius: 12px;
+    border: 2px solid rgb(107, 107, 107);
+    position:relative;
+    margin: 0 7vw;
+    top:365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6vw .2vw;
+    /* padding-left: .6vw; */
+}
+
+.bg-black img:first-child{
+    height: 80px;
+}
+
+.bg-black img:nth-of-type(2){
+    height:50px;
+}
+
+.bg-black div{
+    padding-left: 20px;
+    padding-right: 45px;
+    
+}
