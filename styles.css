@@ -154,7 +154,7 @@ nav div button:nth-child(2){
     border-bottom: 8px solid rgb(56, 56, 56);
 }
 
-.second,.third{
+.second,.third,.fourth,.fifth,.sixth{
     height: 600px;
     background-color: black;
     border-bottom: 8px solid rgb(56, 56, 56)
@@ -201,16 +201,25 @@ nav div button:nth-child(2){
     z-index: -1;
 }
 
+.fourth .content>span>video{
+    width: 330px;
+    right: 100px;
+    bottom: 156px;
+    height: 214px;
+    position: absolute;
+    z-index: -1;
+}
+
 .mobile{
     position: relative;
     /* border: 2px solid yellow; */
-
+    padding-bottom:100px ;
 }
 
 .bg-black{
     background-color: black;
     border-radius: 12px;
-    border: 2px solid rgb(107, 107, 107);
+    border: 1px solid rgb(107, 107, 107);
     position:relative;
     margin: 0 7vw;
     top:365px;
@@ -233,4 +242,39 @@ nav div button:nth-child(2){
     padding-left: 20px;
     padding-right: 45px;
     
+}
+
+.sixth p,.sixth h1{
+    color: var(--text);
+}
+
+.sixth h1{
+    text-align: center;
+    margin: 2vw 0;
+    font-size: 60px;
+}
+.sixth{
+    display: flex ;
+    flex-direction: column;
+    padding: 4vw 14vw;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: auto;
+}
+
+.question{
+    /* border: 2px solid white; */
+    padding: 1.5vw 1vw;
+    font-size: 23px;
+    margin-bottom: 0.6vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    align-items: center;
+    
+}
+
+.question:hover{
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
 }
